@@ -26,4 +26,8 @@ add_executable(bank_cpp main.cpp
         App/App.cpp
         App/App.h
         Services/UserService/UserService.cpp
-        Services/UserService/UserService.h)
+        Services/UserService/UserService.h
+        Exceptions/BadCredentials.h
+        Services/AccountService/AccountService.cpp
+        Services/AccountService/AccountService.h
+        Exceptions/AccountNotFoundException.h)

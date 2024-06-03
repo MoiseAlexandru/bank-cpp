@@ -18,6 +18,8 @@ public:
     Account getReceiver() const;
 
     bool amountIsValid() const override;
+
+    friend std::ostream& operator<<(std::ostream os, const AccountToAccount& transfer);
 };
 
 

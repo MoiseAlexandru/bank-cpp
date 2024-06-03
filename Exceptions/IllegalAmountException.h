@@ -4,6 +4,8 @@
 
 #ifndef ILLEGALAMOUNTEXCEPTION_H
 #define ILLEGALAMOUNTEXCEPTION_H
+#include <exception>
+#include <string>
 
 class IllegalAmountException: std::exception
 {

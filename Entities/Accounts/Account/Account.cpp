@@ -19,10 +19,21 @@ double Account::getBalance() const
     return balance;
 }
 
+std::shared_ptr<User> Account::getOwner() const
+{
+    return owner;
+}
+
+Account::AccountType Account::getAccountType() const
+{
+    return accountType;
+}
+
+
 void Account::addMoney(int amount)
 {
     if(balance <= 0)
-        throw new IllegalAmountException("Amount should be positive.");
+        throw IllegalAmountException("Amount should be positive.");
     balance += amount;
 }
 
@@ -33,4 +44,10 @@ void Account::removeMoney(int amount)
     if(balance < amount)
         throw new IllegalAmountException("Not enough balance for this withdrawal");
     balance -= amount;
+}
+
+
+std::ostream& operator<<(std::ostream& os, const Account& account) {
+    os << "(Account: " << account.getAccountId() << ", type: " << account.getAccountType() << ")\n";
+    return os;
 }

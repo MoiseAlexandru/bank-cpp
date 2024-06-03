@@ -8,7 +8,7 @@
 
 
 class Deposit : public Transaction {
-
+public:
     friend std::ostream& operator<<(std::ostream os, const Deposit& deposit);
 
     bool amountIsValid() const override;

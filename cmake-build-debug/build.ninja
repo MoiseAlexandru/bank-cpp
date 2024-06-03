@@ -115,6 +115,12 @@ build CMakeFiles/bank_cpp.dir/Services/UserService/UserService.cpp.obj: CXX_COMP
   OBJECT_DIR = CMakeFiles\bank_cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\bank_cpp.dir\Services\UserService
 
+build CMakeFiles/bank_cpp.dir/Services/AccountService/AccountService.cpp.obj: CXX_COMPILER__bank_cpp_unscanned_Debug C$:/Users/Moise$ Alexandru/Desktop/bank-cpp/Services/AccountService/AccountService.cpp || cmake_object_order_depends_target_bank_cpp
+  DEP_FILE = CMakeFiles\bank_cpp.dir\Services\AccountService\AccountService.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\bank_cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\bank_cpp.dir\Services\AccountService
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target bank_cpp
@@ -123,7 +129,7 @@ build CMakeFiles/bank_cpp.dir/Services/UserService/UserService.cpp.obj: CXX_COMP
 #############################################
 # Link the executable bank_cpp.exe
 
-build bank_cpp.exe: CXX_EXECUTABLE_LINKER__bank_cpp_Debug CMakeFiles/bank_cpp.dir/main.cpp.obj CMakeFiles/bank_cpp.dir/Entities/User/User.cpp.obj CMakeFiles/bank_cpp.dir/Repositories/UserRepository/UserRepository.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Transactions/Transaction/Transaction.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Transactions/Deposit/Deposit.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Transactions/Withdrawal/Withdrawal.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Transactions/AccountToAccount/AccountToAccount.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Accounts/Account/Account.cpp.obj CMakeFiles/bank_cpp.dir/Repositories/AccountRepository/AccountRepository.cpp.obj CMakeFiles/bank_cpp.dir/App/App.cpp.obj CMakeFiles/bank_cpp.dir/Services/UserService/UserService.cpp.obj
+build bank_cpp.exe: CXX_EXECUTABLE_LINKER__bank_cpp_Debug CMakeFiles/bank_cpp.dir/main.cpp.obj CMakeFiles/bank_cpp.dir/Entities/User/User.cpp.obj CMakeFiles/bank_cpp.dir/Repositories/UserRepository/UserRepository.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Transactions/Transaction/Transaction.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Transactions/Deposit/Deposit.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Transactions/Withdrawal/Withdrawal.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Transactions/AccountToAccount/AccountToAccount.cpp.obj CMakeFiles/bank_cpp.dir/Entities/Accounts/Account/Account.cpp.obj CMakeFiles/bank_cpp.dir/Repositories/AccountRepository/AccountRepository.cpp.obj CMakeFiles/bank_cpp.dir/App/App.cpp.obj CMakeFiles/bank_cpp.dir/Services/UserService/UserService.cpp.obj CMakeFiles/bank_cpp.dir/Services/AccountService/AccountService.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\bank_cpp.dir

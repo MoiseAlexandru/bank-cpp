@@ -7,25 +7,23 @@
 
 #include <string>
 
+#include "../../Exceptions/BadCredentials.h"
 #include "../../Exceptions/UsernameAlreadyExistsException.h"
 #include "../../Repositories/UserRepository/UserRepository.h"
 
 class UserService {
 private:
     UserRepository& userRepository;
-    UserService() : userRepository(UserRepository::getInstance());
+    UserService() : userRepository(UserRepository::getInstance()) {};
 
 public:
     static UserService& getInstance();
 
-    void createUser(const std::string username, const std::string password, const std::string name, const std::string address)
-    {
-        if(userRepository.usernameExists(username))
-            throw UsernameAlreadyExistsException("This username is taken");
-        User user(username, password, name, address);
-        userRepository.addUser(user);
-    }
+    void createUser(const std::string username, const std::string password, const std::string name, const std::string address);
 
+    void authenticateUser(const std::string username, const std::string password) const;
+
+    User& getUserByUsername(const std::string username) const;
 
 };
 

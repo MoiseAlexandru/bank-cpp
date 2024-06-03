@@ -13,6 +13,8 @@ class Withdrawal : public Transaction {
 
 private:
     bool amountIsValid() const override;
+public:
+    friend std::ostream& operator<<(std::ostream os, const Withdrawal& withdrawal);
 };
 
 

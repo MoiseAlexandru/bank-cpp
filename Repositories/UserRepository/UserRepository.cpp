@@ -4,7 +4,7 @@
 
 #include "UserRepository.h"
 
-#include "../Exceptions/UsernameAlreadyExistsException.h"
+#include "../../Exceptions/UsernameAlreadyExistsException.h"
 
 UserRepository& UserRepository::getInstance()
 {

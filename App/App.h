@@ -4,12 +4,15 @@
 #include <memory>
 
 #include "../Entities/User/User.h"
+#include "../Services/UserService/UserService.h"
 
 class App {
+    UserService& userService;
+    AccountService& accountService;
     std::unique_ptr<User> loggedInUser;
 
 private:
-    App()
+    App() : userService(UserService::getInstance()), accountService(AccountService::getInstance)
     {
         loggedInUser = nullptr;
     };
@@ -20,7 +23,9 @@ private:
     void displayAdminMenu();
     void displayMenu();
     void displayAccounts();
-    void displayAccount();
+    void selectAccountDialogue();
+    void manageAccountMenu();
+    void createAccountMenu();
 
 public:
     static App& getInstance();
