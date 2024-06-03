@@ -14,7 +14,7 @@ std::ostream& operator<<(std::ostream& os, const Withdrawal& withdrawal) {
     return os;
 }
 
-bool Withdrawal::amountIsValid() const override
+bool Withdrawal::amountIsValid() const
 {
     return amount > 0 && amount <= withdrawalLimit && amount <= initiator.getBalance();
 }

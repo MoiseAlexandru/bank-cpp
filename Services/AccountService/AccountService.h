@@ -13,7 +13,9 @@ private:
     AccountService() : accountRepository(AccountRepository::getInstance()) {}
 public:
     static AccountService& getInstance();
-    public std::shared_ptr<Account> findAccountById(int accountId);
+    std::shared_ptr<Account> findAccountById(int accountId) const;
+    std::vector <std::shared_ptr<Account> > findAccountsByUsername(std::string username) const;
+    void addAccount(std::shared_ptr<Account> account);
 };
 
 

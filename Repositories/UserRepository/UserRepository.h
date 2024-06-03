@@ -19,7 +19,7 @@ public:
 
     void addUser(const User& user);
 
-    User& getUserByUsername(const std::string& username);
+    const User& getUserByUsername(const std::string& username) const;
 
     bool usernameExists(const std::string& username) const;
 };

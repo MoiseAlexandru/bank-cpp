@@ -10,6 +10,9 @@
 #include <vector>
 
 #include "../Entities/Accounts/Account/Account.h"
+#include "../Entities/Accounts/AccountFactory/AccountFactory.h"
+#include "../Exceptions/AccountNotFoundException.h"
+#include "../Services/AccountService/AccountService.h"
 
 App& App::getInstance()
 {
@@ -27,6 +30,12 @@ int App::readNextInt()
             return std::stoi(line);
         std::cout << "Invalid input, try again.\n";
     }
+}
+
+void App::run()
+{
+    std::cout << "Welcome to the app.\n";
+    displayCreateOrLoginMenu();
 }
 
 
@@ -95,13 +104,13 @@ void App::displayLoginMenu()
         try
         {
             userService.authenticateUser(username, password);
-            User &user = userService.getUserByUsername(username);
+            User user = userService.getUserByUsername(username);
             loggedInUser = std::make_unique<User>(user);
             break;
         }
         catch (BadCredentials &e)
         {
-            std::cout << e.what();
+            std::cout << e.what() << "\n";
         }
     }
     std::cout << "Log in successful. You can now access your accounts.\n";
@@ -137,8 +146,80 @@ void App::displayMenu()
     }
 }
 
+void App::displayAccounts()
+{
+    std::vector<std::shared_ptr<Account>> accounts = accountService.findAccountsByUsername(loggedInUser->getUsername());
+    std::cout << "Here is a list with your accounts:\n";
+    for(auto& it : accounts)
+        std::cout << it << "\n";
+}
+
 
 void App::selectAccountDialogue()
 {
-    std::vector<std::shared_ptr<Account>> accounts = accountService.getAccountByUsername(loggedInUser->getUsername());
+    std::cout << "Enter the id of the account you want to manage:\n";
+    int accountId = readNextInt();
+    try
+    {
+        currentAccount = accountService.findAccountById(accountId);
+    }
+    catch (AccountNotFoundException e)
+    {
+        std::cout << e.what();
+        return;
+    }
+    manageAccountMenu();
+}
+
+void App::manageAccountMenu()
+{
+    std::cout << "managing account.";
+}
+
+void App::createAccountMenu()
+{
+    int choice = 0;
+
+    while(choice < 1 || choice > 3)
+    {
+        std::cout << "What account type do you want to create? \n";
+        std::cout << "1. CheckingAccount \n";
+        std::cout << "2. CreditAccount \n";
+        std::cout << "3. CheckingAccount \n";
+        choice = readNextInt();
+        if(choice < 1 || choice > 3)
+            std::cout << "Incorrect input. Try again \n";
+    }
+    switch (choice)
+    {
+    case 1:
+        createCheckingAccountMenu();
+        break;
+    case 2:
+        createCreditAccountMenu();
+        break;
+    case 3:
+        createSavingsAccountMenu();
+        break;
+    default:
+        std::cout << "This should be unreachable";
+    }
+}
+
+void App::createCheckingAccountMenu()
+{
+    std::shared_ptr<Account> account = AccountFactory::createAccount("CHECKING", loggedInUser);
+    accountService.addAccount(account);
+    std::shared_ptr<CheckingAccount> checkingAccount = std::dynamic_pointer_cast<CheckingAccount>(account);
+    std::cout << checkingAccount;
+}
+
+
+
+
+
+
+void App::displayAdminMenu()
+{
+
 }

@@ -12,25 +12,28 @@
 
 class Account {
     static int numberOfAccounts;
-private:
+public:
     enum AccountType
     {
         CHECKING_ACCOUNT,
         CREDIT_ACCOUNT,
         SAVINGS_ACCOUNT
     };
-    AccountType accountType;
 
 protected:
+    std::shared_ptr<User> owner;
+    AccountType accountType;
     double balance;
     int accountId;
-    std::shared_ptr<User> owner;
 
 public:
-    Account()
+    Account(std::shared_ptr<User> user, AccountType accountType) : owner(user), accountType(accountType)
     {
+        numberOfAccounts++;
+        accountId = numberOfAccounts;
         balance = 0;
     }
+    virtual ~Account() = default;
 
     double getAccountId() const;
 

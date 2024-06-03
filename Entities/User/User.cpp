@@ -6,7 +6,10 @@
 
 User::User(const std::string& username, const std::string& password, const std::string& name, const std::string& address) : username(username), password(password), name(name), address(address)
 {
-
+    this -> username = username;
+    this -> password = password;
+    this -> name = name;
+    this -> address = address;
 }
 
 void User::setAddress(const std::string& address)

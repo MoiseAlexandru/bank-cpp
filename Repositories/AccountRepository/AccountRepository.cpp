@@ -36,3 +36,8 @@ std::shared_ptr<Account> AccountRepository::getAccountById(int accountId) const
     else
         throw AccountNotFoundException("Unable to find an account with this id");
 }
+
+void AccountRepository::addAccount(std::shared_ptr<Account> account)
+{
+    accounts.push_back(account);
+}

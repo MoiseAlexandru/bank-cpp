@@ -4,7 +4,7 @@
 
 #include "Transaction.h"
 
-Transaction::Transaction(std::string initiator, TransactionType transactionType, double amount, double transactionFee) : initiator(initiator), transactionType(transactionType), amount(amount), transactionFee(transactionFee)
+Transaction::Transaction(Account initiator, TransactionType transactionType, double amount, double transactionFee) : initiator(initiator), transactionType(transactionType), amount(amount), transactionFee(transactionFee)
 {
     this -> status = PENDING;
 }

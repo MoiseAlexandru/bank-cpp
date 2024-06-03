@@ -15,3 +15,8 @@ std::ostream& operator<<(std::ostream& os, const AccountToAccount& transfer) {
     os << "amount: " << transfer.getAmount() << ", fees: " << transfer.getTransactionFee() << ")\n";
     return os;
 }
+
+Account AccountToAccount::getReceiver() const
+{
+    return this -> receiver;
+}

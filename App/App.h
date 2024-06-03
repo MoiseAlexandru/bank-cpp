@@ -3,16 +3,19 @@
 
 #include <memory>
 
+#include "../Entities/Accounts/Account/Account.h"
 #include "../Entities/User/User.h"
 #include "../Services/UserService/UserService.h"
+#include "../Services//AccountService/AccountService.h"
 
 class App {
     UserService& userService;
     AccountService& accountService;
-    std::unique_ptr<User> loggedInUser;
+    std::shared_ptr<User> loggedInUser;
+    std::shared_ptr<Account> currentAccount;
 
 private:
-    App() : userService(UserService::getInstance()), accountService(AccountService::getInstance)
+    App() : userService(UserService::getInstance()), accountService(AccountService::getInstance())
     {
         loggedInUser = nullptr;
     };
@@ -26,6 +29,9 @@ private:
     void selectAccountDialogue();
     void manageAccountMenu();
     void createAccountMenu();
+    void createCheckingAccountMenu();
+    void createCreditAccountMenu();
+    void createSavingsAccountMenu();
 
 public:
     static App& getInstance();

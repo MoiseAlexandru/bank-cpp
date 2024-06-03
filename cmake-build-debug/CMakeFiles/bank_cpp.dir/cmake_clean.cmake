@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/bank_cpp.dir/App/App.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/App/App.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/Account/Account.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/Account/Account.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/AccountFactory/AccountFactory.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/AccountFactory/AccountFactory.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/CheckingAccount/CheckingAccount.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/CheckingAccount/CheckingAccount.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/CreditAccount/CreditAccount.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/CreditAccount/CreditAccount.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/SavingsAccount/SavingsAccount.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Accounts/SavingsAccount/SavingsAccount.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Transactions/AccountToAccount/AccountToAccount.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Transactions/AccountToAccount/AccountToAccount.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Transactions/Deposit/Deposit.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Transactions/Deposit/Deposit.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Transactions/Transaction/Transaction.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Transactions/Transaction/Transaction.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/Transactions/Withdrawal/Withdrawal.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/Transactions/Withdrawal/Withdrawal.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Entities/User/User.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Entities/User/User.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Repositories/AccountRepository/AccountRepository.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Repositories/AccountRepository/AccountRepository.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Repositories/UserRepository/UserRepository.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Repositories/UserRepository/UserRepository.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Services/AccountService/AccountService.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Services/AccountService/AccountService.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/Services/UserService/UserService.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/Services/UserService/UserService.cpp.obj.d"
+  "CMakeFiles/bank_cpp.dir/main.cpp.obj"
+  "CMakeFiles/bank_cpp.dir/main.cpp.obj.d"
+  "bank_cpp.exe"
+  "bank_cpp.exe.manifest"
+  "bank_cpp.pdb"
+  "libbank_cpp.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/bank_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

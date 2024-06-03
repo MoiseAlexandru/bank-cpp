@@ -10,7 +10,17 @@ AccountService& AccountService::getInstance()
     return instance;
 }
 
-std::shared_ptr<Account> AccountService::findAccountById(int accountId)
+std::vector<std::shared_ptr<Account>> AccountService::findAccountsByUsername(std::string username) const
+{
+    return accountRepository.getAccountsByUsername(username);
+}
+
+std::shared_ptr<Account> AccountService::findAccountById(int accountId) const
 {
     return accountRepository.getAccountById(accountId);
+}
+
+void AccountService::addAccount(std::shared_ptr<Account> account)
+{
+    return accountRepository.addAccount(account);
 }

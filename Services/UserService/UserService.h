@@ -23,7 +23,7 @@ public:
 
     void authenticateUser(const std::string username, const std::string password) const;
 
-    User& getUserByUsername(const std::string username) const;
+    const User& getUserByUsername(const std::string username) const;
 
 };
 

@@ -21,6 +21,8 @@ public:
     std::vector<std::shared_ptr<Account>> getAccountsByUsername(const std::string &username) const;
 
     std::shared_ptr<Account> getAccountById(int accountId) const;
+
+    void addAccount(std::shared_ptr<Account> account);
 };
 
 

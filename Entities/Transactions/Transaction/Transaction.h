@@ -31,7 +31,7 @@ protected:
 
 public:
 
-    Transaction(std::string initiator, TransactionType transactionType, double amount, double transactionFee);
+    Transaction(Account initiator, TransactionType transactionType, double amount, double transactionFee);
 
     double getAmount() const;
     Account getInitiator() const;

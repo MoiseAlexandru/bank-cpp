@@ -12,7 +12,7 @@ std::ostream& operator<<(std::ostream& os, const Deposit& deposit) {
     return os;
 }
 
-bool Deposit::amountIsValid() const override
+bool Deposit::amountIsValid() const
 {
     return amount > 0;
 }

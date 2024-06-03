@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="bank_cpp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bank_cpp">
+				<Option output="C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/bank_cpp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 bank_cpp"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bank_cpp/fast">
+				<Option output="C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/bank_cpp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1.2/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 bank_cpp/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Moise Alexandru/Desktop/bank-cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/App/App.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/App/App.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/Account/Account.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/Account/Account.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/AccountFactory/AccountFactory.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/AccountFactory/AccountFactory.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/CheckingAccount/CheckingAccount.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/CheckingAccount/CheckingAccount.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/CreditAccount/CreditAccount.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/CreditAccount/CreditAccount.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/SavingsAccount/SavingsAccount.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Accounts/SavingsAccount/SavingsAccount.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Transactions/AccountToAccount/AccountToAccount.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Transactions/AccountToAccount/AccountToAccount.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Transactions/Deposit/Deposit.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Transactions/Deposit/Deposit.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Transactions/Transaction/Transaction.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Transactions/Transaction/Transaction.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Transactions/Withdrawal/Withdrawal.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/Transactions/Withdrawal/Withdrawal.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/User/User.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Entities/User/User.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Exceptions/AccountNotFoundException.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Exceptions/BadCredentials.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Exceptions/IllegalAmountException.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Exceptions/UserNotFoundException.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Exceptions/UsernameAlreadyExistsException.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Repositories/AccountRepository/AccountRepository.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Repositories/AccountRepository/AccountRepository.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Repositories/UserRepository/UserRepository.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Repositories/UserRepository/UserRepository.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Services/AccountService/AccountService.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Services/AccountService/AccountService.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Services/UserService/UserService.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/Services/UserService/UserService.h">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/main.cpp">
+			<Option target="bank_cpp"/>
+		</Unit>
+		<Unit filename="C:/Users/Moise Alexandru/Desktop/bank-cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

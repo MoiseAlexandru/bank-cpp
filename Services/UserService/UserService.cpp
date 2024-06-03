@@ -4,6 +4,8 @@
 
 #include "UserService.h"
 
+#include <iostream>
+
 
 UserService& UserService::getInstance()
 {
@@ -23,12 +25,12 @@ void UserService::authenticateUser(const std::string username, const std::string
 {
     if(!userRepository.usernameExists(username))
         throw BadCredentials("Username or password incorect");
-    User& user = userRepository.getUserByUsername(username);
+    User user = userRepository.getUserByUsername(username);
     if(!user.matchPassword(password))
         throw BadCredentials("Username or password incorrect");
 }
 
-User& UserService::getUserByUsername(const std::string username) const
+const User& UserService::getUserByUsername(const std::string username) const
 {
     return userRepository.getUserByUsername(username);
 }

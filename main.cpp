@@ -1,7 +1,10 @@
 #include <iostream>
 
+#include "App/App.h"
+
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    App& app = App::getInstance();
+    app.run();
     return 0;
 }

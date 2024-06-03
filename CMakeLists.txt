@@ -30,4 +30,13 @@ add_executable(bank_cpp main.cpp
         Exceptions/BadCredentials.h
         Services/AccountService/AccountService.cpp
         Services/AccountService/AccountService.h
-        Exceptions/AccountNotFoundException.h)
+        Exceptions/AccountNotFoundException.h
+        Entities/Accounts/CheckingAccount/CheckingAccount.cpp
+        Entities/Accounts/CheckingAccount/CheckingAccount.h
+        Entities/Accounts/CreditAccount/CreditAccount.cpp
+        Entities/Accounts/CreditAccount/CreditAccount.h
+        Entities/Accounts/SavingsAccount/SavingsAccount.cpp
+        Entities/Accounts/SavingsAccount/SavingsAccount.h
+        Entities/Accounts/AccountFactory/AccountFactory.cpp
+        Entities/Accounts/AccountFactory/AccountFactory.h
+)
