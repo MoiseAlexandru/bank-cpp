@@ -8,7 +8,8 @@
 
 
 class CheckingAccount : public Account {
-    private double dailyWithdrawLimit;
+private:
+    double dailyWithdrawLimit;
 public:
     CheckingAccount(std::shared_ptr <User> user) : Account(user, CHECKING_ACCOUNT)
     {

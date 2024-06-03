@@ -13,7 +13,7 @@ private:
     double interestRate;
 
 public:
-    SavingsAccount(std::shared_ptr <User> user, int maxWithdrawals, double interestRate) : Account(user)
+    SavingsAccount(std::shared_ptr <User> user, int maxWithdrawals, double interestRate) : Account(user, SAVINGS_ACCOUNT)
     {
         this -> maxWithdrawals = maxWithdrawals;
         this -> interestRate = interestRate;

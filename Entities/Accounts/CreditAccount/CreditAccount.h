@@ -19,7 +19,7 @@ private:
 
 public:
 
-    CreditAccount(std::shared_ptr<User> user, int loanAmount, double maxCreditGain, double interestRate, int duration) : Account(user)
+    CreditAccount(std::shared_ptr<User> user, int loanAmount, double maxCreditGain, double interestRate, int duration) : Account(user, CREDIT_ACCOUNT)
     {
         this -> loanAmount = loanAmount;
         this -> maxCreditGain = maxCreditGain;
